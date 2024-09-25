@@ -1,0 +1,157 @@
+.card {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.error {
+    color: red;
+}
+
+#cardsOutput {
+    min-height: 100px;
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 90%;
+    }
+}
+
+#cardsOutput p {
+    margin-bottom: -10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.generated-number {
+    flex-grow: 1;
+}
+
+.copy-icon {
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s, bottom 0.5s;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 10px;
+    background: #f7be04;
+    border-radius: 15px;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.slider:hover {
+    opacity: 0.5;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.action-btn {
+    background-color: #000;
+    border: 0;
+    color: #f7be04;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 15px;
+    font-family: fantasy;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+.action-btn:hover {
+    opacity: 0.5;
+}
+
+.wrapper {
+    display: flex;
+    background-color: rgb(253, 253, 252);
+    flex-direction: column;
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 35%;
+    border-radius: 15px;
+    font-family: fantasy;
+    padding-bottom: 1%;
+}
+
+.slider_main {
+    display: flex;
+    flex-direction: row;
+}
+
+output {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+
+.wrapper_main {
+    display: flex;
+    background-color: rgb(253, 253, 252);
+    flex-direction: row;
+    width: 22%;
+    margin-top: 5%;
+    margin-left: 38%;
+    border-radius: 15px;
+    font-family: Georgia, serif;
+    padding-left: 45px;
+}
+
+
+
+.clipboard {
+    margin-left: auto;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    font-size: 23px;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+
+
+.clipboard:hover {
+    opacity: 0.5;
+}
