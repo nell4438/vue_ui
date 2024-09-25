@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     checkedCount++;
                     bankName.textContent = `${checkedCount}/${totalCredentials}`;
 
-                    if (response.data?.includes('✔️')) {
+                    if (typeof response.data === 'string' && response.data.includes('✔️')) {
                         hitCount++;
                         hitsOutput.innerHTML += `
                             <div class="card mx-auto">
